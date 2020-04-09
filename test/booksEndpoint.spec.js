@@ -36,10 +36,10 @@ describe("GET /api/v1/books", () => {
 
 describe('GET /api/v1/books/:id', () => {
   before( async() => {
-    response = await request.get('/api/v1/books/3')
+    response = await request.get('/api/v1/books/1')
   })
 
   it('response with a single book', () => {
-    expect(response.body.book.id).to.equal(3)
+    expect(response.body.book.id).to.equal(1)
   });
 });
